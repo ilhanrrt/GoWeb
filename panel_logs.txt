@@ -1,0 +1,28 @@
+Tarih: 2024-09-23 22:29:33, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Postman üzerinden veri ID'si arandı: 73 [INFO]
+[INFO] Tarih: 2024-09-23 22:35:35, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Postman üzerinden veri ID'si arandı: 73
+[INFO] Tarih: 2024-09-23 23:32:28, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Postman üzerinden veri ID'si arandı: 70
+[INFO] Tarih: 2024-09-23 23:35:46, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Postman üzerinden veri ID'si arandı: 70
+[INFO] Tarih: 2024-09-24 16:08:57, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Postman üzerinden veri ID'si arandı: 70
+[INFO] Tarih: 2024-09-24 16:09:07, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Postman üzerinden veri ID'si arandı: 73
+[INFO] Tarih: 2024-09-24 16:10:42, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Postman üzerinden veri ID'si arandı: 73
+[INFO] Tarih: 2024-09-24 16:10:47, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Postman üzerinden veri ID'si arandı: 7
+[ERROR] Tarih: 2024-09-26 11:33:39, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Post bulunamadı ID: 7
+[INFO] Tarih: 2024-09-26 11:38:31, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Kullanıcı çıkış yaptı
+[INFO] Tarih: 2024-09-26 11:43:28, Kullanıcı ID: 0, Admin Statü: admin, İşlem: Giriş yaptı
+[ERROR] Tarih: 2024-09-26 11:43:36, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Post bulunamadı ID: 70
+[INFO] Tarih: 2024-09-26 12:07:39, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Postman üzerinden veri ID'si arandı: 73
+[INFO] Tarih: 2024-09-26 17:51:20, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Postman üzerinden veri ID'si arandı: 73
+[ERROR] Tarih: 2024-09-26 17:59:03, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Bu metod desteklenmiyor. Lütfen uygun bir HTTP metodu kullanın. Kullanıcı post çağırırken farklı bir yöntem denedi
+[INFO] Tarih: 2024-09-26 18:42:00, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Postman üzerinden veriler çağrıldı
+[ERROR] Tarih: 2024-09-26 19:52:01, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Bu metod desteklenmiyor. Lütfen uygun bir HTTP metodu kullanın. Kullanıcı post çağırırken farklı bir yöntem denedi
+[ERROR] Tarih: 2024-09-28 11:15:46, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Bu metod desteklenmiyor. Lütfen uygun bir HTTP metodu kullanın.
+[INFO] Tarih: 2024-09-28 11:15:50, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Postman üzerinden veriler çağrıldı
+[INFO] Tarih: 2024-09-28 11:16:12, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Postman üzerinden veri ID'si arandı: 106
+[ERROR] Tarih: 2024-09-28 11:17:00, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Bu metod desteklenmiyor. Lütfen uygun bir HTTP metodu kullanın.
+[ERROR] Tarih: 2024-09-28 11:17:06, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Bu metod desteklenmiyor. Lütfen uygun bir HTTP metodu kullanın.
+[INFO] Tarih: 2024-09-28 11:17:10, Kullanıcı ID: 1, Admin Statü: admin, İşlem: Postman üzerinden veri silindi, ID: 106
+[ERROR] Tarih: 2024-09-28 11:38:27, İşlem: Post silinemedi: record not found
+[ERROR] Tarih: 2024-09-28 11:38:27, Kullanıcı ID: 0, Admin Statü: unknown, İşlem: Panic occurred: Post silinemedi: record not found
+[INFO] Tarih: 2024-10-28 14:36:06, Kullanıcı ID: 0, Admin Statü: admin, İşlem: Giriş yaptı
+[ERROR] Tarih: 2024-10-28 14:36:22, İşlem: Kategori silinemedi: kategori bulunamadı
+[ERROR] Tarih: 2024-10-28 14:36:22, Kullanıcı ID: 0, Admin Statü: unknown, İşlem: Panic occurred: Kategori silinemedi: kategori bulunamadı

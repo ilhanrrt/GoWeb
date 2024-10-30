@@ -1,0 +1,134 @@
+{{define "index"}}
+
+<!DOCTYPE html>
+<html lang="tr">
+
+{{template "head"}}
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+    {{template "sidebar"}}
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                {{template "navbar"}}
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    {{ template "content" . }}
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            {{ template "footer"}}
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    {{ template "scripts"}}{{template "alert" .Alert}}
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('keyup', function() {
+            let searchText = this.value;
+
+            fetch('/admin/search?query=' + searchText)
+                .then(response => response.json())
+                .then(data => {
+                    let tableBody = document.querySelector('#postsTable tbody');
+                    tableBody.innerHTML = '';
+
+                    data.posts.forEach(post => {
+                        let row = `<tr>
+                            <th scope="row">${post.ID}</th>
+                            <td><img width="80px" src="${post.Picture_url}"></td>
+                            <td>${post.Title}</td>
+                            <td>${post.Category}</td>
+                            <td>${post.CreatedAt}</td>
+                            <td>${post.Status}</td>
+                            <td>
+                                <a href="/admin/edit/${post.ID}" class="btn btn-outline-warning"><i class="fa fa-pen"></i></a>
+                                <a href="/admin/delete/${post.ID}" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>`;
+                        tableBody.innerHTML += row;
+                    });
+                });
+        });
+    } else {
+        console.error('searchInput element not found in the DOM');
+    }
+
+    // Modal ve ilgili öğeleri seç
+    var modal = document.getElementById("filterModal");
+    var btn = document.getElementById("filterBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+    // Butona tıklanırsa modal açılır
+    if (btn) {
+        btn.onclick = function() {
+            modal.style.display = "block";
+        };
+    } else {
+        console.error('filterBtn element not found in the DOM');
+    }
+
+    // Kapatma düğmesine tıklanırsa modal kapanır
+    if (span) {
+        span.onclick = function() {
+            modal.style.display = "none";
+        };
+    } else {
+        console.error('Close button element not found in the DOM');
+    }
+
+    // Modala tıklanırsa modal kapanır
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+
+    // Formun submit işlemini yakala
+    var filterForm = document.getElementById("filterForm");
+    if (filterForm) {
+        filterForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            var condition = document.getElementById("condition").value;
+
+            // Filtreleme işlemleri burada yapılır
+            console.log("Condition:", condition);
+
+            // Modal'ı kapat
+            modal.style.display = "none";
+        });
+    } else {
+        console.error('filterForm element not found in the DOM');
+    }
+});
+
+    </script>
+
+</body>
+
+</html>
+{{end }}

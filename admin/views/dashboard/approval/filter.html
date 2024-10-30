@@ -1,0 +1,20 @@
+{{ define "filter" }}
+
+<div id="filterModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Filter Data</h2>
+        <form method="get" action="/admin">
+            <select name="category_id">
+                <option value="">Tüm Kategoriler</option>
+                {{range .Categories}}
+                <option value="{{.ID}}" {{if eq .ID $.SelectedCategoryID}}selected{{end}}>{{.Title}}</option>
+                {{end}}
+            </select>
+            <button type="submit">Filtrele</button>
+        </form>
+
+
+    </div>
+</div>
+{{ end }}
